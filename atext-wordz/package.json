@@ -1,0 +1,25 @@
+{
+  "name": "atext-wordz",
+  "version": "1.0.0",
+  "description": "Provides a list of words within an entire text alongside few statistics",
+  "main": "index.js",
+  "scripts" : {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuUseGitHub/atext-wordz.git"
+  },
+  "keywords": [
+    "text",
+    "analysis",
+    "stats",
+    "fun",
+    "useful"
+  ],
+  "author": "Jean Luc Emmanuel VERHANNEMAN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ManuUseGitHub/atext-wordz/issues"
+  },
+  "homepage": "https://github.com/ManuUseGitHub/atext-wordz#readme"
+}
