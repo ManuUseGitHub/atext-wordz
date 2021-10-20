@@ -1,17 +1,17 @@
-export interface IWordStateOptions {
+export interface IWordStatsOptions {
   sortString : string;
   minimumLength : number;
   cbOnNewWord : ( word: string ) => void;
 }
 
-export interface IStateOfWords {
+export interface IStatsOfWord {
   order ? : number ,
   word ? : string ,
   number ? : number ,
   length ? : number
 }
 
-export interface IStateOfWordsObject {
+export interface IStatsOfWordsObject {
   [ key: string ]: { 
     order ? : number , 
     number ? : number , 
@@ -27,5 +27,5 @@ export interface ICandidate {
   dictionary : IDictionary ,
   length : number ,
   currentWord : string[] ,
-  options : IWordStateOptions
+  options : IWordStatsOptions
 }

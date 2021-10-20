@@ -4,10 +4,10 @@ const { sort } = require( "bystr-sort" );
 
 import {
 	ICandidate ,
-	IWordStateOptions as IWordStatsOptions ,
+	IWordStatsOptions ,
 	IDictionary ,
-	IStateOfWords as IStatsOfWord ,
-	IStateOfWordsObject as IStatsOfWordsObject ,
+	IStatsOfWord ,
+	IStatsOfWordsObject ,
 } from "./interfaces";
 
 const addNewWord = ( candidate: ICandidate ): void => {
