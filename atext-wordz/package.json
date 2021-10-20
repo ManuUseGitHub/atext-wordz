@@ -1,6 +1,6 @@
 {
   "name": "atext-wordz",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Provides a list of words within an entire text alongside few statistics",
   "main": "index.js",
   "scripts": {},
