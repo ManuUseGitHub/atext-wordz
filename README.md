@@ -1,4 +1,4 @@
-# <img id="module-logo" src="https://github.com/ManuUseGitHub/atext-wordz/blob/master/at-wz-logo.svg"> Atext - wordZ <br/>[![npm version](https://badge.fury.io/js/atext-wordz.svg)](https://badge.fury.io/js/atext-wordz) [![License: MIT](https://img.shields.io/badge/License-MIT-61dafb.svg)](https://github.com/ManuUseGitHub/atext-wordz/blob/master/LICENSE)
+# <img id="module-logo" src="https://raw.githubusercontent.com/ManuUseGitHub/module-template/master/at-wz-logo.svg"> <img id="module-logo" src="https://raw.githubusercontent.com/ManuUseGitHub/module-template/master/at-wz-typo-logo.svg"> <br/>[![npm version](https://badge.fury.io/js/atext-wordz.svg)](https://badge.fury.io/js/atext-wordz) [![License: MIT](https://img.shields.io/badge/License-MIT-61dafb.svg)](https://github.com/ManuUseGitHub/atext-wordz/blob/master/LICENSE)
 ## INTRO
 
 Imagine you have that homework which requires you to build a list of all different words of a very long text; maybe a whole chapter of a book ! Then yould probably need something like this. 
