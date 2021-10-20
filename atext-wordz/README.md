@@ -2,6 +2,8 @@
 
 Provides a list of words within an entire text alongside few statistics
 
+---
+
 ## Getting started
 
 1. Install the package
@@ -29,6 +31,36 @@ Provides a list of words within an entire text alongside few statistics
     const result = getWordList( text , options );
     // ==> ["word 1", "word 2", ... "word N"]
     ```
+
+---
+
+## Light demo
+Assuming you have a `demo.txt` file in a `demo` folder at the same level as this `.js` file and you want to get word stats.
+```js
+const { fs } = require('fs') ;
+
+const { getWStatsList , getWStatsObj , getWordList } = require( "../atext-wordz" );
+
+fs.readFile( "./demo/demo.txt" , "utf8" , ( err , text ) => {
+
+  const sortString = ` by number of a > than b's `;
+  const cbOnNewWord = ( word ) => {
+    // TODO: make first sector actions on new word found
+  };
+
+  const options = {  sortString , cbOnNewWord };
+
+  const result = getWStatsList( text , options );
+
+  console.log( result );
+  // outputs :
+  // < an array of word statistics sorted by most used words >
+
+});
+```
+
+---
+
 ## Options
 There is few options to meet your requirements at this time. Here is the definition table.
 
@@ -58,6 +90,9 @@ There is few options to meet your requirements at this time. Here is the definit
     
 3. **cbOnNewWord**
     Provides you with a callback function that will be called whenever a new word is encountered. Which means, only once per word.
+
+---
+
 ## Stats
 The services will gives you a stats matching an instance of `IStatsOfWords` or `IStatsOfWordsObject` or a simple array of `strings`.
 
@@ -77,6 +112,8 @@ Each word will be a `key` and stats will be the `value` of that pair
 |-|-|-|-|
 |**type**|number|number|number|
 
+---
+
 ## Word detection
 It is not that easy to detect words in a text that is quite big and containing many noises. It's not as easy as spliting on every space. And a normal text relies also on punctuation. 
 
@@ -85,6 +122,7 @@ By chance French and English punctuation may not very this much or not at all.
 Therefore, detecting anything matching anything something else than a "special" character chould be considered as part of a world. Things come very complicated when dealing with languages that are not that strict about isolating words... like japanese or chinese to list very a few.
 
 Here is the regex that helped to detect non special characters :
-```regEx
-[�\d\s\\[\]\x20-\x40\-`{-~\xA0-\xBF×Ø÷øʹ͵ͺ;！？♪╚-╬┘-▀\uFF3B\uFF40\uFF5B-\uFF65￥・（）]
+```js
+const special = 
+    /[�\d\s\\[\]\x20-\x40\-`{-~\xA0-\xBF×Ø÷øʹ͵ͺ;！？♪╚-╬┘-▀\uFF3B\uFF40\uFF5B-\uFF65￥・（）]/i;
 ```
