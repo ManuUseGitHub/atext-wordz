@@ -5,7 +5,7 @@ Imagine you have that homework which requires you to build a list of all differe
 
 Oh and what if you could also check the **number of usage**, the **the position of it's first appearence** or even it's **length**.
 
-Ok, that's cool and fun!
+Ok, that's cool and fun! 🥳
 
 [NPM package](https://www.npmjs.com/package/atext-wordz)
 
@@ -18,9 +18,13 @@ const { getWStatsList , getWStatsObj , getWordList } = require( "../atext-wordz"
 
 fs.readFile( "./demo/demo.txt" , "utf8" , ( err , text ) => {
 
+  // We will use byStr ~ Sort // visit : https://www.npmjs.com/package/bystr-sort
   const sortString = ` by number of a > than b's `;
+  
   const cbOnNewWord = ( word ) => {
+    
     // TODO: make first sector actions on new word found
+    
   };
 
   const options = {  sortString , cbOnNewWord };
