@@ -5,7 +5,7 @@ Imagine you have that homework which requires you to build a list of all differe
 
 Oh and what if you could also check the **number of usage**, the **the position of it's first appearence** or even it's **length**.
 
-Ok, that's cool and fun!
+Ok, that's cool and fun! 🥳
 
 [NPM package](https://www.npmjs.com/package/atext-wordz)
 
