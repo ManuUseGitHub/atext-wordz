@@ -1,9 +1,9 @@
 # <img id="module-logo" src="https://github.com/ManuUseGitHub/atext-wordz/blob/master/at-wz-logo.svg"> <img id="module-logo" src="https://github.com/ManuUseGitHub/atext-wordz/blob/master/at-wz-typo-logo.svg"> <br/>[![npm version](https://badge.fury.io/js/atext-wordz.svg)](https://badge.fury.io/js/atext-wordz) [![License: MIT](https://img.shields.io/badge/License-MIT-61dafb.svg)](https://github.com/ManuUseGitHub/atext-wordz/blob/master/LICENSE)
 ## INTRO
 
-Imagine you have that homework which requires you to build a list of all different words of a very long text; maybe a whole chapter of a book ! Then yould probably need something like this? 
+Imagine you have that homework which requires you to build a list of all different words of a very long text; maybe a whole chapter of a book ! Then yould probably need something like this. 
 
-Oh and what if you could also check the **number of usage**, the **the position of it's first appearence** or even it's **length**.
+Oh and what if you could also check the **number of usage**, the **the position of it's first appearence** or even it's **length**?
 
 Ok, that's cool and fun! 🥳
 
